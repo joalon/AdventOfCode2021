@@ -1,10 +1,16 @@
-module Lib
-    ( part1
-    , part2
-    ) where
-
+module Main where
 
 import Data.List
+import System.Environment
+
+main :: IO ()
+main = do
+	args <- getArgs
+	content <- readFile (args !! 0)
+	let list = lines content
+
+	putStrLn $ "Part 1: " ++ show (part1 list)
+	putStrLn $ "Part 2: " ++ show (part2 list)
 
 
 part1 list = depth * length
