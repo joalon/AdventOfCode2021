@@ -1,7 +1,0 @@
-
-<manifest>
-	<remote name="origin" fetch="https://github.com"/>
-	<default revision="refs/heads/main" remote="origin" sync-j="4"/>
-	<project name="joalon/aoc2021-day1" remote="origin" path="day1"/>
-	<project name="joalon/aoc2021-day2" remote="origin" path="day2"/>
-</manifest>
